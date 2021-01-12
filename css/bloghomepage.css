@@ -10,8 +10,10 @@ body {
 }
 
 .card-image {
-    width: 15%;
-    height: 25%;
+    /*width: 50%;
+    height: 55%;*/
+    width: 9em;
+    height: 9em;
 }
 
 #header {
@@ -50,28 +52,73 @@ a {
     text-decoration: none;
 }
 
+button {
+    margin-bottom: 2em;
+}
+
+footer {
+    text-align: center;
+    background-color: pink;
+    font-size: 1em;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding-top: .05em;
+    padding-bottom: 1em;
+}
+
 #golden-card {
     grid-area: golden;
+    border-style: solid;
+    text-align: center;
+    background-image: url("/Users/chris/Documents/Udacity Project 1 Blog Post/pictures/golden-retriever.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #lab-card {
     grid-area: lab;
+    border-style: solid;
+    text-align: center;
+    background-image: url("/Users/chris/Documents/Udacity Project 1 Blog Post/pictures/labrador retriever.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #beagle-card {
     grid-area: beagle;
+    border-style: solid;
+    text-align: center;
+    background-image: url("/Users/chris/Documents/Udacity Project 1 Blog Post/pictures/beagle_pic.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #border-card {
     grid-area: collie;
+    border-style: solid;
+    text-align: center;
+    background-image: url("/Users/chris/Documents/Udacity Project 1 Blog Post/pictures/Border-Collie.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card {
+    text-align: center;
+    padding: 1em;
 }
 
 #card-container {
-    display: grid;
+    display: inline-grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
     grid-template-areas: "golden lab" "beagle collie";
     border-style: solid;
     border-color: black;
-    grid-row-gap: 4em;
+    grid-column-gap: 2em;
+    padding: 2em;
 }
