@@ -1,5 +1,7 @@
 body {
     background-color: pink;
+    top: 0;
+    width: 100%;
 }
 
 .social-pics {
@@ -8,6 +10,18 @@ body {
 }
 
 .dog-image {
-    height: 40%;
-    width: 45%;
+    height: 50%;
+    width: 50%;
+}
+
+#dog-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.dog-article {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
