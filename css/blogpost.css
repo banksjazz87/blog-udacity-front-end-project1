@@ -10,8 +10,9 @@ body {
 }
 
 .dog-image {
-    height: 50%;
-    width: 50%;
+    /*height: 50%;
+    width: 50%;*/
+    object-fit: cover;
 }
 
 #dog-flex {
@@ -24,4 +25,44 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#blog-post-header {
+    grid-area: header;
+    text-align: center;
+}
+
+#golden-pic {
+    grid-area: golden;
+    background-image: url("/Users/chris/Documents/Udacity Project 1 Blog Post/pictures/golden-retriever.jpg");
+}
+
+#lab-pic {
+    grid-area: lab;
+    background-image: url("/Users/chris/Documents/Udacity Project 1 Blog Post/pictures/labrador retriever.jpeg");
+}
+
+#border-pic {
+    grid-area: border;
+    background-image: url("/Users/chris/Documents/Udacity Project 1 Blog Post/pictures/Border-Collie.jpg");
+}
+
+#beagle-pic {
+    grid-area: beagle;
+    background-image: url("/Users/chris/Documents/Udacity Project 1 Blog Post/pictures/beagle_pic.jpg");
+}
+
+.landing-pic {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#landing-container {
+    display: grid;
+    grid-template-columns: 10% auto auto;
+    grid-template-rows: 10% auto auto;
+    height: 100vh;
+    width: 100%vw;
+    grid-row-gap: 0;
+    grid-template-areas: "header header header" "golden golden lab" "border border beagle";
 }
