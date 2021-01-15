@@ -21,10 +21,10 @@ body {
 }
 
 .dog-article {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 #blog-post-header {
@@ -68,6 +68,37 @@ body {
     width: 100vw;
     grid-row-gap: 0;
     grid-template-areas: "header header header" "golden golden lab" "border border beagle";
+}
+
+.dog-p {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.2em;
+}
+
+.dog-header {
+    font-size: 2em;
+}
+
+.dog-image {
+    width: 80%;
+    height: 60%;
+}
+
+.dog-breed {
+    font-size: 1.5em;
+    text-align: right;
+}
+
+.dog-list {
+    font-size: 1.2em;
+    list-style: none;
+}
+
+hr {
+    width: 100%;
+    height: .1em;
+    background-color: black;
 }
 
 
