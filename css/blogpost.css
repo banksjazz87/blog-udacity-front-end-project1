@@ -111,23 +111,60 @@ body {
 
 #social-links {
     display: flex;
+    position: relative;
     flex-direction: row;
-    width: 100%;
     list-style: none;
     text-align: center;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    align-items: center;
     justify-content: space-evenly;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 
 #social-head {
     text-align: center;
 }
 
+#author-head {
+    grid-area: author-head;
+    padding-bottom: 2em;
+}
 
-/*#author-info {
+#author-list {
+    grid-area: list;
+    text-align: left;
+    padding-right: 3em;
+}
+
+#avatar {
+    grid-area: avatar;
+    /*height: 100%;
+    width: 70%;*/
+    height: 20em;
+    width: 20em;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+#social {
+    grid-area: social;
+}
+
+#author-info {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 10% auto 10%;
-    height: 70%;
-    width: 70%;
-    grid-template-areas: 
-}*/
+    grid-template-areas: "author-head author-head" "avatar list" "social social";
+    width: 100%;
+    height: 90%;
+    padding: 2em;
+    text-align: center;
+    background-color: gray;
+    grid-column-gap: 1em;
+}
