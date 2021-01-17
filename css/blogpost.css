@@ -2,6 +2,7 @@ body {
     background-color: pink;
     top: 0;
     width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .social-pics {
@@ -134,12 +135,16 @@ body {
 #author-head {
     grid-area: author-head;
     padding-bottom: 2em;
+    font-size: 2em;
+    margin-top: 0;
 }
 
 #author-list {
     grid-area: list;
     text-align: left;
-    padding-right: 3em;
+    /*width: 10em;*/
+    font-size: 1.2em;
+    margin-right: 1em;
 }
 
 #avatar {
@@ -156,14 +161,21 @@ body {
     grid-area: social;
 }
 
+#return-home {
+    grid-area: return;
+    bottom: 0;
+    padding-bottom: 0;
+}
+
 #author-info {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 10% auto 10%;
-    grid-template-areas: "author-head author-head" "avatar list" "social social";
+    grid-template-rows: 10% auto 10% 10%;
+    grid-template-areas: "author-head author-head" "avatar list" "social social" "return return";
     width: 100%;
     height: 90%;
-    padding: 2em;
+    padding: .25em;
+    justify-content: center;
     text-align: center;
     background-color: gray;
     grid-column-gap: 1em;
