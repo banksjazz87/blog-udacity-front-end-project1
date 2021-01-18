@@ -2,37 +2,43 @@ body {
     height: 100vh;
     width: 100%;
     top: 0;
-    background-color: beige;
+    background-color: #f5f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .card-header {
     font-size: 1.5em;
     margin-top: 0em;
+    margin-left: .2em;
     text-align: left;
     color: white;
-    background-color: black;
+    text-shadow: 1px 2px black;
+    width: 100%;
 }
 
 .card-text {
     position: absolute;
     bottom: 1em;
-    margin-bottom: 0;
+    margin-bottom: 1em;
     color: white;
     text-shadow: 1px 1px black;
     border-radius: 25%;
-    background-color: gray;
+    background-color: #8f7983;
+    box-shadow: 1px 4px #362d31;
     padding: .5em;
-    font-size: 1.15em;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1em;
 }
 
 #header {
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
+    background-color: #fbf2c0;
     width: 100%;
     text-align: center;
-    top: 0;
-    padding: 1.5em;
+    margin-top: 1em;
+    left: 0;
     grid-area: header;
     line-height: .25em;
 }
@@ -40,7 +46,7 @@ body {
 #navbar {
     display: flex;
     flex-direction: column;
-    background-color: gainsboro;
+    background-color: #c4a287;
     line-height: 2em;
     align-items: flex-start;
     padding-left: 1em;
@@ -53,15 +59,24 @@ body {
 #nav-items {
     text-align: left;
     margin-left: 0;
-    padding: 0;
+    padding-left: .5em;
+}
+
+#nav-items a:hover {
+    color: purple;
+}
+
+#nav-items a:active {
+    color: purple;
 }
 
 li {
-    list-style-type: none;
+    list-style-type: disc;
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .card-button {
@@ -71,14 +86,24 @@ a {
     left: 35%;
 }
 
+.card-button:hover {
+    background-color: rgb(189, 184, 184);
+}
+
+.card-button:active {
+    background-color: rgb(189, 184, 184);
+    transform: translateX(.2em);
+}
+
 .card-button a {
-    color: blue;
+    color: black;
     font-size: 1.2em;
+    padding: .12em;
 }
 
 footer {
     text-align: center;
-    background-color: pink;
+    background-color: #c06e52;
     font-size: 1em;
     bottom: 0;
     width: 100%;
@@ -131,6 +156,7 @@ footer {
 .card {
     text-align: center;
     border-radius: 2%;
+    border-width: .2em;
     position: relative;
 }
 
@@ -139,15 +165,13 @@ footer {
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
     grid-template-areas: "golden lab" "beagle collie";
-    border-style: solid;
-    border-color: black;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
     padding-top: 0;
     padding-bottom: 0;
     grid-area: cards;
+    margin-right: 2em;
+    margin-left: 2em;
 }
 
 #master-container {
