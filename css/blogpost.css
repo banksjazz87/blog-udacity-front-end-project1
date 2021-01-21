@@ -26,7 +26,6 @@ body {
     margin: 0;
     grid-area: header;
     text-align: center;
-    /*background-color: #fbf2c0;*/
     background-image: linear-gradient(to bottom right, #fbf2c0, #e4d898);
 }
 
@@ -72,8 +71,8 @@ body {
 }
 
 .dog-p {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     font-size: 1.2em;
 }
 
@@ -82,8 +81,6 @@ body {
 }
 
 .dog-image {
-    /*width: 80%;
-    height: 60%;*/
     width: 35em;
     height: 30em;
     border-radius: 2%;
@@ -149,15 +146,12 @@ body {
 #author-list {
     grid-area: list;
     text-align: left;
-    /*width: 10em;*/
     font-size: 1.2em;
     margin-right: 1em;
 }
 
 #avatar {
     grid-area: avatar;
-    /*height: 100%;
-    width: 70%;*/
     height: 20em;
     width: 20em;
     margin-left: 1em;
@@ -177,25 +171,9 @@ body {
     width: 100%;
     height: 90%;
     margin-top: 2em;
-    /*padding: 3em;*/
     justify-content: center;
     text-align: center;
     background-color: #c06e52;
     grid-column-gap: 1em;
     border-radius: 2%;
-}
-
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    body {
-        font-size: 18px;
-    }
-    #blog-post-header {
-        width: 100%;
-    }
 }
