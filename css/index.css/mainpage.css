@@ -1,3 +1,6 @@
+@import url("/Users/chris/Documents/Udacity Project 1 Blog Post/css/index.css/main.grid.index.css");
+@import url("/Users/chris/Documents/Udacity Project 1 Blog Post/css/index.css/mediaqueries.index.css");
+@import url("/Users/chris/Documents/Udacity Project 1 Blog Post/css/index.css/photo.grid.index.css");
 body {
     height: 100vh;
     width: 100%;
@@ -155,28 +158,4 @@ footer {
     border-radius: 2%;
     border-width: .2em;
     position: relative;
-}
-
-#card-container {
-    display: inline-grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
-    grid-template-areas: "golden lab" "beagle collie";
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
-    padding-top: 0;
-    padding-bottom: 0;
-    grid-area: cards;
-    margin-right: 2em;
-    margin-left: 2em;
-}
-
-#master-container {
-    display: grid;
-    grid-template-rows: 15% auto 10%;
-    grid-template-columns: 15% auto;
-    grid-template-areas: "header header" "nav cards" "footer footer";
-    width: 100%;
-    height: 100vh;
-    background-color: #f5f1f1;
 }
