@@ -71,10 +71,22 @@ body {
     grid-template-areas: "header header header" "golden golden lab" "border border beagle";
 }
 
+.dog-quote {
+    background-color: #fced9c;
+    border-style: outset;
+    width: 20em;
+    padding: .5em;
+    margin-top: 0;
+    border-radius: 10%;
+    box-shadow: .2em .4em #8f833e;
+    font-size: 1em;
+}
+
 .dog-p {
     margin-left: 15%;
     margin-right: 15%;
     font-size: 1.2em;
+    text-align: left;
 }
 
 .dog-header {
