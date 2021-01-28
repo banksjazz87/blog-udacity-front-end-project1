@@ -1,6 +1,6 @@
-@import url("/Users/chris/Documents/Udacity Project 1 Blog Post/css/index.css/main.grid.index.css");
-@import url("/Users/chris/Documents/Udacity Project 1 Blog Post/css/index.css/mediaqueries.index.css");
-@import url("/Users/chris/Documents/Udacity Project 1 Blog Post/css/index.css/photo.grid.index.css");
+@import url("main.grid.index.css");
+@import url("mediaqueries.css");
+@import url("photo.grid.index.css");
 body {
     height: 100vh;
     width: 100%;

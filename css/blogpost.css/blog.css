@@ -1,6 +1,7 @@
-@import url("/css/blogpost.css/mediaqueries.css");
+@import url("mediaqueries.css");
 body {
     background-color: #fdfdfd;
+    background-color: black;
     top: 0;
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
