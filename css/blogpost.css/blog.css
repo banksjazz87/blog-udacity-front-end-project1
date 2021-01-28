@@ -1,7 +1,6 @@
 @import url("mediaqueries.css");
 body {
     background-color: #fdfdfd;
-    background-color: black;
     top: 0;
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -33,22 +32,22 @@ body {
 
 #golden-pic {
     grid-area: golden;
-    background-image: url("/Users/chris/Documents/Udacity Project 1 Blog Post/pictures/golden-retriever.jpg");
+    background-image: url("../../pictures/golden-retriever.jpg");
 }
 
 #lab-pic {
     grid-area: lab;
-    background-image: url("/Users/chris/Documents/Udacity Project 1 Blog Post/pictures/labrador retriever.jpeg");
+    background: url("../../pictures/labrador retriever.jpeg");
 }
 
 #border-pic {
     grid-area: border;
-    background-image: url("/Users/chris/Documents/Udacity Project 1 Blog Post/pictures/Border-Collie.jpg");
+    background-image: url("../../pictures/Border-Collie.jpg");
 }
 
 #beagle-pic {
     grid-area: beagle;
-    background-image: url("/Users/chris/Documents/Udacity Project 1 Blog Post/pictures/beagle_pic.jpg");
+    background-image: url("../../pictures/beagle_pic.jpg");
 }
 
 .landing-pic {

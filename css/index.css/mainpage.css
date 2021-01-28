@@ -120,7 +120,7 @@ footer {
 #golden-card {
     grid-area: golden;
     text-align: center;
-    background-image: url("/Users/chris/Documents/Udacity Project 1 Blog Post/pictures/golden-retriever.jpg");
+    background-image: url("../../pictures/golden-retriever.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -129,7 +129,7 @@ footer {
 #lab-card {
     grid-area: lab;
     text-align: center;
-    background-image: url("/Users/chris/Documents/Udacity Project 1 Blog Post/pictures/labrador retriever.jpeg");
+    background-image: url("../../pictures/labrador retriever.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -138,7 +138,7 @@ footer {
 #beagle-card {
     grid-area: beagle;
     text-align: center;
-    background-image: url("/Users/chris/Documents/Udacity Project 1 Blog Post/pictures/beagle_pic.jpg");
+    background-image: url("../../pictures/beagle_pic.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -147,7 +147,7 @@ footer {
 #border-card {
     grid-area: collie;
     text-align: center;
-    background-image: url("/Users/chris/Documents/Udacity Project 1 Blog Post/pictures/Border-Collie.jpg");
+    background-image: url("../../pictures/Border-Collie.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
