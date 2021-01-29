@@ -27,7 +27,8 @@ body {
     margin: 0;
     grid-area: header;
     text-align: center;
-    background-image: linear-gradient(to bottom right, #fbf2c0, #e4d898);
+    background-color: #fced9c;
+    border-style: outset;
 }
 
 #golden-pic {
@@ -117,10 +118,9 @@ body {
     display: flex;
     flex-direction: row;
     text-align: center;
-    border-style: solid;
-    border-color: #c4a287;
+    background-color: #f1a669;
+    box-shadow: .25em .25em rgb(110, 87, 43);
     border-radius: 5%;
-    border-width: .3em;
     padding: .5em;
     width: 70%;
     align-items: center;
