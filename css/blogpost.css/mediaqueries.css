@@ -1,6 +1,11 @@
 @media only screen and (max-width: 600px) {
     body {
-        font-size: 14px;
+        font-size: 10px;
+    }
+    .breed-section {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
