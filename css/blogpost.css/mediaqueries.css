@@ -1,11 +1,46 @@
 @media only screen and (max-width: 600px) {
-    body {
-        font-size: 10px;
-    }
     .breed-section {
+        margin-left: 2em;
+        margin-right: 3em;
         width: 100%;
-        margin-left: 0;
-        margin-right: 0;
+    }
+    p {
+        font-size: .8em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: .2em;
+    }
+    .dog-header {
+        font-size: .1em;
+    }
+    li {
+        font-size: .7em;
+    }
+    #author-list li {
+        font-size: 1em;
+    }
+    #social-head {
+        text-align: center;
+    }
+    #author-head {
+        grid-area: author-head;
+    }
+    #author-list {
+        grid-area: list;
+    }
+    #avatar {
+        grid-area: avatar;
+        width: 2em;
+        border-radius: 20%;
+    }
+    #social {
+        grid-area: social;
+    }
+    #author-info {
+        font-size: .7em;
     }
 }
 
