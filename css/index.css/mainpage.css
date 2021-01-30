@@ -42,9 +42,10 @@ body {
     text-align: center;
     top: 0;
     left: 0;
-    padding-top: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
     grid-area: header;
-    line-height: .5em;
+    line-height: .1em;
 }
 
 #navbar {
@@ -108,11 +109,12 @@ a {
 footer {
     text-align: center;
     background-color: #c06e52;
-    font-size: 1em;
+    font-size: .85em;
     bottom: 0;
     width: 100%;
     margin: 0;
-    padding-top: .05em;
+    padding-top: .5em;
+    line-height: .5em;
     padding-bottom: 1em;
     grid-area: footer;
 }
