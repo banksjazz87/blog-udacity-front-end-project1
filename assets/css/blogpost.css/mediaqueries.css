@@ -1,7 +1,45 @@
 @media only screen and (max-width: 600px) {
+    body {
+        text-align: center;
+        /*margin-left: 2em;
+        margin-right: 2em;*/
+        justify-items: center;
+        justify-content: center;
+    }
+    #blog-post-header {
+        width: 15em;
+    }
+    /*#golden-pic {
+        width: 16em;
+    }
+    #lab-pic {
+        width: 16em;
+    }
+    #border-pic {
+        width: 16em;
+    }
+    #beagle-pic {
+        width: 16em;
+    }
+    #landing-container {
+        width: 32em;
+        height: 32em;
+    }*/
+    #landing-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .landing-pic {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 20em;
+        height: 20em;
+        text-align: center;
+    }
     .breed-section {
-        margin-left: 2em;
-        margin-right: 3em;
+        margin-left: 3em;
+        margin-right: 2em;
         width: 100%;
     }
     p {
@@ -39,8 +77,24 @@
     #social {
         grid-area: social;
     }
-    #author-info {
+    /*#author-info {
         font-size: .7em;
+    }*/
+    #author-info {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 10% auto 10% 15% 5%;
+        grid-template-areas: "author-head author-head" "avatar list" "social social" "links links" "return return";
+        width: 100%;
+        height: 100%;
+        margin-top: 2em;
+        justify-content: center;
+        text-align: center;
+        background-color: #c06e52;
+        grid-column-gap: 1em;
+        border-radius: 2%;
+        font-size: .7em;
+        margin-left: 2em;
     }
 }
 

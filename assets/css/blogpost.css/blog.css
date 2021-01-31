@@ -25,6 +25,7 @@ body {
 
 #blog-post-header {
     margin: 0;
+    width: 100%;
     grid-area: header;
     text-align: center;
     background-color: #fced9c;
