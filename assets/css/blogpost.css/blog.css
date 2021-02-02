@@ -1,4 +1,4 @@
-@import url("mediaqueries.css");
+@import "mediaqueries.css";
 body {
     background-color: #fdfdfd;
     top: 0;
@@ -11,11 +11,6 @@ body {
     width: 25px;
 }
 
-#dog-flex {
-    display: flex;
-    flex-direction: column;
-}
-
 .dog-article {
     display: flex;
     flex-direction: column;
@@ -26,6 +21,9 @@ body {
 #blog-post-header {
     margin: 0;
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
     grid-area: header;
     text-align: center;
     background-color: #fced9c;
@@ -34,43 +32,52 @@ body {
 
 #golden-pic {
     grid-area: golden;
-    background-image: url("../../pictures/golden-retriever.jpg");
 }
 
 #lab-pic {
     grid-area: lab;
-    background: url("../../pictures/labrador retriever.jpeg");
 }
 
 #border-pic {
     grid-area: border;
-    background-image: url("../../pictures/Border-Collie.jpg");
 }
 
 #beagle-pic {
     grid-area: beagle;
-    background-image: url("../../pictures/beagle_pic.jpg");
 }
 
 .landing-pic {
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 50vw;
+    height: 44vh;
     border-style: solid;
     border-width: .15em;
     border-color: #f5f1f1;
     border-radius: 2%;
 }
 
+#dog-grid {
+    display: grid;
+    grid-template-rows: 40vh 40vh;
+    grid-template-columns: 50vw 50vw;
+    grid-template-areas: "golden lab" "border beagle";
+    grid-area: dog-grid;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100vw;
+    height: 88vh;
+}
+
 #landing-container {
     display: grid;
-    grid-template-columns: 10% auto auto;
-    grid-template-rows: 12% auto auto;
+    grid-template-columns: 100vw;
+    grid-template-rows: 12vh 88vh;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     grid-row-gap: 0;
+    grid-column-gap: 0;
     left: 0;
     text-align: center;
-    grid-template-areas: "header header header" "golden golden lab" "border border beagle";
+    grid-template-areas: "header" "dog-grid";
 }
 
 .dog-quote {
