@@ -1,6 +1,7 @@
 @media only screen and (max-width: 850px) {
     body {
         font-size: 14px;
+        width: 100vw;
     }
     #header {
         display: flex;
@@ -50,26 +51,33 @@
         text-decoration: underline;
     }
     .card {
-        width: 90%;
+        display: flex;
+        flex-direction: row;
+        width: 25vw;
+        height: 50vh;
+        margin-left: 0;
+        margin-right: 2em;
+        text-align: center;
+        padding-left: 0;
+        /*width: 5%;
         height: 90%;
         margin-left: 5%;
         margin-right: 5%;
-        font-size: 1.15em;
+        font-size: 1.15em;*/
     }
     #card-container {
-        display: flex;
-        flex-direction: column;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        grid-area: cards;
+        display: grid;
+        grid-template-columns: 90vw;
+        grid-template-rows: 50vh;
+        grid-template-areas: "golden" "lab" "beagle" "collie";
     }
     #master-container {
         display: grid;
         grid-template-rows: 5% 12% auto 5%;
         grid-template-columns: auto;
         grid-template-areas: "nav" "header" "cards" "footer";
-        width: 100%;
-        height: 220vh;
+        width: 100vw;
+        height: 210vh;
         z-index: 1;
     }
 }

@@ -161,3 +161,90 @@ footer {
     border-width: .2em;
     position: relative;
 }
+
+@media only screen and (max-width: 850px) {
+    body {
+        font-size: 12px;
+        width: 100vw;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #header {
+        display: flex;
+        flex-direction: column;
+        background-color: #fbf2c0;
+        width: 100%;
+        text-align: center;
+        margin-top: 1em;
+        line-height: .2em;
+        grid-area: header;
+        font-size: .8em;
+    }
+    #header p {
+        flex-wrap: wrap;
+        line-height: 1.5em;
+        margin-right: 2em;
+        margin-left: 2em;
+        font-size: 1.15em;
+    }
+    #header h1 {
+        padding-top: .5em;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        width: 100%;
+        margin-left: 0;
+        grid-area: nav;
+    }
+    #nav-items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-items: space-between;
+    }
+    #nav-items li {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-items: space-evenly;
+        align-items: space-evenly;
+        margin-left: 1em;
+        margin-right: 1em;
+        text-decoration: underline;
+    }
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 50vh;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        padding-left: 0;
+        /*width: 5%;
+        height: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 1.15em;*/
+    }
+    #card-container {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 50vh;
+        grid-template-areas: "golden" "lab" "beagle" "collie";
+    }
+    #master-container {
+        display: grid;
+        grid-template-rows: 5% 12% auto 5%;
+        grid-template-columns: auto;
+        grid-template-areas: "nav" "header" "cards" "footer";
+        width: 100vw;
+        height: auto;
+        z-index: 1;
+    }
+}

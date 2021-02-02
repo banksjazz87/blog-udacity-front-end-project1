@@ -185,6 +185,11 @@ body {
     grid-area: social;
 }
 
+.social-pics:hover {
+    border-width: .2em;
+    border-color: black;
+}
+
 #return-home {
     grid-area: return;
 }
