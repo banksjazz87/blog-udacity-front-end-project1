@@ -165,9 +165,7 @@ footer {
 @media only screen and (max-width: 850px) {
     body {
         font-size: 12px;
-        width: 100vw;
-        margin-left: 0;
-        margin-right: 0;
+        width: 100%;
     }
     #header {
         display: flex;
@@ -177,15 +175,18 @@ footer {
         text-align: center;
         margin-top: 1em;
         line-height: .2em;
+        margin-left: 0;
         grid-area: header;
         font-size: .8em;
+        /*padding-right: 2em;*/
     }
     #header p {
         flex-wrap: wrap;
         line-height: 1.5em;
-        margin-right: 2em;
-        margin-left: 2em;
+        /*margin-right: 2em;
+        margin-left: 2em;*/
         font-size: 1.15em;
+        text-align: center;
     }
     #header h1 {
         padding-top: .5em;
@@ -196,7 +197,7 @@ footer {
         position: fixed;
         z-index: 2;
         top: 0;
-        width: 100%;
+        width: 100vw;
         margin-left: 0;
         grid-area: nav;
     }
@@ -213,7 +214,7 @@ footer {
         flex-wrap: wrap;
         justify-items: space-evenly;
         align-items: space-evenly;
-        margin-left: 1em;
+        margin-left: .1em;
         margin-right: 1em;
         text-decoration: underline;
     }
@@ -232,11 +233,24 @@ footer {
         margin-right: 5%;
         font-size: 1.15em;*/
     }
+    .card-text {
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 90vw;
+        margin-left: .5em;
+        margin-right: 1em;
+    }
+    .card-button {
+        text-align: center;
+    }
     #card-container {
         display: grid;
         grid-template-columns: 100vw;
         grid-template-rows: 50vh;
         grid-template-areas: "golden" "lab" "beagle" "collie";
+        width: 100vw;
+        margin-left: 0;
+        margin-right: 0;
     }
     #master-container {
         display: grid;
@@ -244,7 +258,7 @@ footer {
         grid-template-columns: auto;
         grid-template-areas: "nav" "header" "cards" "footer";
         width: 100vw;
-        height: auto;
+        height: 200vh;
         z-index: 1;
     }
 }
