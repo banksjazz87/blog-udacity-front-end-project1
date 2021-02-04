@@ -2,8 +2,14 @@
     body {
         font-size: 12px;
         width: 100vw;
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+    #blog-post-header {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: .85em;
+        justify-content: center;
     }
 }
 
