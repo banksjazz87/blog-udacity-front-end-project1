@@ -30,6 +30,11 @@ body {
     text-align: center;
     background-color: #fced9c;
     border-style: outset;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 #golden-pic {
@@ -227,8 +232,7 @@ a:active {
     border-radius: 2%;
 }
 
-
-/*@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     body {
         margin-right: 0;
         margin-left: 0;
@@ -236,11 +240,16 @@ a:active {
         width: 100vw;
         height: auto;
         text-align: center;
+        font-size: 12px;
     }
     #blog-post-header {
         display: flex;
         flex-direction: row;
         margin-right: 1em;
+        font-size: .95em;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
     .breed-section {
         display: flex;
@@ -248,15 +257,23 @@ a:active {
         flex-wrap: wrap;
         justify-content: center;
         margin-left: .5em;
+        width: 100vw;
+    }
+    .breed-section ul {
+        padding-left: 1em;
+        padding-left: 1em;
+        width: 90vw;
     }
     #author-head {
         font-size: 1.7em;
+        margin-top: 1.5em;
     }
     #author-list {
-        margin-top: 1em;
+        margin-top: 3em;
     }
     #avatar {
         margin-top: 0em;
+        margin-left: 8em;
     }
     #author-info {
         display: grid;
@@ -264,7 +281,7 @@ a:active {
         grid-template-rows: 10vh auto auto 10vh 15vh 5vh;
         grid-template-areas: "author-head" "avatar" "list" "social" "links" "return";
         width: 100vw;
-        height: 90vh;
+        height: 100%;
         margin-left: 0;
         margin-right: 0;
         margin-top: 2em;
@@ -275,13 +292,21 @@ a:active {
         grid-column-gap: 1em;
         border-radius: 2%;
     }
-}*/
-
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 12px;
+    #return-home {
+        margin-bottom: 0;
     }
 }
+
+
+/*@media only screen and (max-width: 600px) {
+    body {
+        font-size: 10px;
+        width: 100vw;
+        margin-left: 0;
+        margin-right: 0;
+        height: auto;
+    }
+}*/
 
 @media only screen and (max-width: 300px) {
     body {
