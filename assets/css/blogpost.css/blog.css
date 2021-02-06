@@ -1,4 +1,4 @@
-@import "mediaqueries.css";
+@import "landing.container.css";
 body {
     background-color: #fdfdfd;
     top: 0;
@@ -72,19 +72,6 @@ body {
     margin-left: 0;
     width: 100vw;
     height: 88vh;
-}
-
-#landing-container {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 12vh 88vh;
-    height: 100vh;
-    width: 100vw;
-    grid-row-gap: 0;
-    grid-column-gap: 0;
-    left: 0;
-    text-align: center;
-    grid-template-areas: "header" "dog-grid";
 }
 
 .dog-quote {
@@ -246,7 +233,7 @@ a:active {
         display: flex;
         flex-direction: row;
         margin-right: 1em;
-        font-size: .95em;
+        font-size: .9em;
         width: 100%;
         align-items: center;
         justify-content: center;
@@ -296,17 +283,6 @@ a:active {
         margin-bottom: 0;
     }
 }
-
-
-/*@media only screen and (max-width: 600px) {
-    body {
-        font-size: 10px;
-        width: 100vw;
-        margin-left: 0;
-        margin-right: 0;
-        height: auto;
-    }
-}*/
 
 @media only screen and (max-width: 300px) {
     body {

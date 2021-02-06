@@ -1,5 +1,4 @@
 @import url("main.grid.index.css");
-@import url("mediaqueries.css");
 @import url("photo.grid.index.css");
 body {
     height: 100vh;
@@ -333,9 +332,10 @@ footer {
         margin-right: 20vw;
         margin-bottom: 1.5em;
         justify-content: center;
+        align-items: center;
     }
     .card-button {
-        text-align: center;
+        margin-left: -3vw;
     }
     #card-container {
         display: grid;
